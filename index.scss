@@ -33,11 +33,13 @@ nav {
     display: flex !important;
   }
   .carousel {
-    height: 300px !important;
+    height: 600px !important;
     z-index: 1 !important;
+  }
+  .carousel-inner {
+    height: 600px !important;
     img {
-      height: 300px !important;
-      z-index: 1 !important;
+      height: 600px !important;
     }
   }
 }
@@ -117,7 +119,7 @@ nav {
   opacity: 0;
   top: 50%;
   left: -50%;
-  z-index: 999;
+  z-index: 997;
   width: 150%;
   background-color: gray;
   transition: 150ms linear;
@@ -125,20 +127,20 @@ nav {
   // overflow-y: scroll;
   // height: 80px;
   a {
-    color: #e1c699;
+    color: white;
     display: block;
-    background-color: white;
+    background-color: #747472;
     padding: 10px;
     margin: 10px;
   }
   a:hover {
-    color: darken(#e1c699, 10%);
+    color: darken(white, 10%);
   }
 }
 .dropdown:hover .dropdown-content {
   display: inline-block;
   opacity: 1;
-  z-index: 999;
+  z-index: 997;
   transition: 150ms linear;
 }
 .mainBody {
@@ -207,4 +209,22 @@ nav {
 }
 .link:hover {
   color: darken(#e1c699, 10%);
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 4rem !important;
+  width: 4rem !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 998 !important;
+}
+.AswIMG {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  opacity: 75%;
+  z-index: 999 !important;
 }
