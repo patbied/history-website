@@ -41,6 +41,7 @@
             <a href="peasant_life_russia_1910_1920.html"
               >Peasant life in Russia 1910-1920s</a
             >
+            <a href="uni_of_germany.html"> Unification of Germany 1850-1871</a>
           </div>
         </div>
       </div>
@@ -71,15 +72,19 @@
         <a href="peasant_life_russia_1910_1920.html"
           >Peasant life in Russia 1910-1920s</a
         >
+        <a href="uni_of_germany.html"> Unification of Germany 1850-1871</a>
       </div>
     </div>
     <!-- NAV END-->
-    <div class="mainBody">
+    <div id="main" class="mainBody">
       <div class="trip">
         <div>
           <h2>Cold revolution exhibit</h2>
         </div>
         <div>
+          <a class="link" href="https://www.youtube.com/watch?v=z7tpOckk8qM">
+            Watch Peasants Lot (1912)</a
+          >
           <p>
             Observations: Tremendous poverty, women primarily wore kerchiefs,
             homes with straw roofs, widespread alcoholism, samovar. We compared
@@ -98,11 +103,7 @@
             more on the side of the revolution being a coup orchestrated by
             Bolsheviks in cities.
           </p>
-          <p>
-            <a class="link" href="https://www.youtube.com/watch?v=z7tpOckk8qM">
-              Watch Peasants Lot (1912)</a
-            >
-          </p>
+          <p></p>
           <img
             class="tripImg"
             src="../images/GettyImages-104412262_large.jpeg"
@@ -124,10 +125,11 @@
     <script>
       var toggler = document.getElementById('toggler');
       var mobileNavMenu = document.getElementById('mobileNavMenu');
+      var main = document.getElementById('main');
       toggler.addEventListener('click', toggleMobile);
       function toggleMobile() {
-        console.log('logged');
         mobileNavMenu.classList.toggle('opened');
+        main.classList.toggle('smaller');
       }
     </script>
     <script

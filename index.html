@@ -41,6 +41,9 @@
             <a href="subpages/peasant_life_russia_1910_1920.html"
               >Peasant life in Russia 1910-1920s</a
             >
+            <a href="subpages/uni_of_germany.html">
+              Unification of Germany 1850-1871</a
+            >
           </div>
         </div>
       </div>
@@ -71,11 +74,14 @@
         <a href="subpages/peasant_life_russia_1910_1920.html"
           >Peasant life in Russia 1910-1920s</a
         >
+        <a href="subpages/uni_of_germany.html">
+          Unification of Germany 1850-1871</a
+        >
       </div>
     </div>
 
     <!-- NAV END-->
-    <div class="mainBodyIndex">
+    <div id="bodyIndex" class="mainBodyIndex">
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -157,10 +163,11 @@
     <script>
       var toggler = document.getElementById('toggler');
       var mobileNavMenu = document.getElementById('mobileNavMenu');
+      var index = document.getElementById('bodyIndex');
       toggler.addEventListener('click', toggleMobile);
       function toggleMobile() {
-        console.log('logged');
         mobileNavMenu.classList.toggle('opened');
+        index.classList.toggle('smaller');
       }
     </script>
     <script

@@ -143,6 +143,7 @@ nav {
   z-index: 997;
   transition: 150ms linear;
 }
+
 .mainBody {
   padding-top: 12vh;
   min-height: 100vh;
@@ -152,11 +153,17 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
 }
+.mainBody.smaller {
+  padding-top: 2vh !important;
+}
 .mainBodyIndex {
   padding-top: 9vh;
   min-height: 100vh;
   z-index: 0;
   background-color: $textColor;
+}
+.mainBodyIndex.smaller {
+  padding-top: 0vh !important;
 }
 
 .currentLink {
@@ -172,6 +179,15 @@ nav {
   .tripImg {
     width: 180px;
     height: 180px;
+  }
+  .AswIMG {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 75px;
+    width: 75px;
+    opacity: 75%;
+    z-index: 999 !important;
   }
 }
 @media screen and (min-width: 801px) {
@@ -189,6 +205,15 @@ nav {
     max-width: 475px;
     max-height: 475px;
     padding: 10px;
+  }
+  .AswIMG {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    opacity: 75%;
+    z-index: 999 !important;
   }
 }
 
@@ -218,13 +243,4 @@ nav {
 .carousel-control-next,
 .carousel-control-prev {
   z-index: 998 !important;
-}
-.AswIMG {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 100px;
-  width: 100px;
-  opacity: 75%;
-  z-index: 999 !important;
 }
