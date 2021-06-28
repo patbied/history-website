@@ -13,12 +13,12 @@ nav {
     display: none !important;
   }
   .carousel {
-    height: 600px !important;
+    height: 91vh !important;
     z-index: 1 !important;
     img {
-      // height: 600px !important;
-      max-height: 91vh;
+      height: 100%;
       z-index: 1 !important;
+      object-fit: cover !important;
     }
   }
 }
@@ -40,6 +40,7 @@ nav {
     height: 600px !important;
     img {
       height: 600px !important;
+      object-fit: cover !important;
     }
   }
 }
@@ -179,6 +180,7 @@ nav {
   .tripImg {
     width: 180px;
     height: 180px;
+    object-fit: cover !important;
   }
   .AswIMG {
     position: fixed;
@@ -202,9 +204,10 @@ nav {
     margin: 10px 0px 10px 0px;
   }
   .tripImg {
-    max-width: 475px;
-    max-height: 475px;
+    width: 475px;
+    height: 475px;
     padding: 10px;
+    object-fit: cover !important;
   }
   .AswIMG {
     position: fixed;
